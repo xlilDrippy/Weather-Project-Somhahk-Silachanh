@@ -1,0 +1,32 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+body {
+    display: block;
+    text-align: center;
+}
+
+.bodycard {
+    margin: 100px auto;
+    width: 100%;
+    top: 200px;
+}
+
+.tempcloud {
+    font-size: 65px;
+}
+
+.weekicon {
+    font-size: 30px;
+}
