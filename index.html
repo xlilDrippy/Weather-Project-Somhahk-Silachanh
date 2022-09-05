@@ -17,10 +17,16 @@
     <div class="bodycard">
         <div class="card" style="width: 50rem; margin: 20px auto;">
             <div class="card-body">
-                <form id="searchBar" class="searchBarClass">
-                    <input type="search" id="search-input" placeholder="Search..." />
-                    <input type="submit" value="Search" />
-                    <input type="submit" value="Current" id="current-location-button" />
+                <form id="search-form" class="mb-3">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" placeholder="Type a City..." class="form-control" id="city-input" autocomplete="off" />
+                        </div>
+                        <div class="col-3">
+                            <input type="submit" value="Search" class="btn btn-primary w-100" />
+                        </div>
+                    </div>
+                
                 </form>
                 </br>
 
@@ -29,14 +35,12 @@
                         <div class="col">
                             <div class="card" style="width: 20rem; margin: 10px auto;">
                                 <div class="card-body">
-                                    <h2 class="card-title" id="state"></h2>
-                                    <h4 class="card-subtitle mb-2 text-muted" id="todayDate">Sunday 10:00 AM</h4>
+                                    <h2 class="card-title" id="city"></h2>
+                                    <h4 class="card-subtitle mb-2 text-muted" id="date">Sunday 10:00 AM</h4>
                                     <h4 class="card-subtitle mb-2 text-muted" id="description"></h4>
 
 
                                     <p class="card-text">
-                                        Precipitation: <span id="precipitation"></span>%
-                                        </br>
                                         Wind: <span id="wind"> </span> km/h
                                         </br>
                                         Humidity: <span id="humidity"></span>%
@@ -48,7 +52,7 @@
                         <div class="col">
                             <div class="card" style="width: 20rem;  margin: 10px auto;">
                                 <div class="card-body">
-                                    <h3 class="card-title"><span id="temperature"></span><span>°C</span></h3>
+                                    <h3 class="card-title"><span id="temperature"></span><span class="units">°C</span></h3>
                                     <p class="card-text">
                                         <i class="fa-solid fa-cloud-rain tempcloud"></i>
                                     </p>
